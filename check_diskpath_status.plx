@@ -19,7 +19,7 @@ use strict;
 # 	            device,filesystems,sizes. So I have to use df <path> to get
 # 	            the details which is fed into this plugin to get values.
 # 			
-# 	            It also works on all unix/linux systems except my cases.
+# 	            It also works on all unix/linux systems also.
 #########################################################################################
 $#ARGV += 1;
 unless ($#ARGV == 5){
