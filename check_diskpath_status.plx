@@ -3,7 +3,7 @@ use warnings;
 use strict;
 
 #########################################################################################
-# Version : 0.1
+# Version : 0.2
 # Author : Priyadarshee D. Kumar
 # Date : 25/12/2012
 # Purpose : To check the used disk space and used inode limit using df on path
