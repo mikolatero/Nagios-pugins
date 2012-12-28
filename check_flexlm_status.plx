@@ -35,11 +35,11 @@ my $users =`$lmpath lmstat -c $licsrv -a | grep -i $serv | wc -l`;
 chomp($users);
 system "$lmpath lmstat -c $licsrv -a > /dev/null";
 if ($? == 0){
-	print "LIC. OK : PLM License is running on $licsrv and pulling $users lics now.\n";
+	print "LIC. OK : License is running on $licsrv and pulling $users lics now.\n";
 	exit 0;
 	}
 if ($? != 0){
-	print "CRITICAL : PLM License server is down or not pulling licenses.\n";
+	print "CRITICAL : License server is down or not pulling licenses.\n";
 	exit 2;
 	}
 	
