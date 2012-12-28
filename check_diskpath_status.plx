@@ -6,7 +6,7 @@ use strict;
 # Version : 0.2
 # Author : Priyadarshee D. Kumar
 # Date : 25/12/2012
-# Purpose : To check the used disk space and used inode limit using df on path
+# Purpose : To check the used disk space and used inode limit using df on path or mountpoint.
 #	    It takes the mountpoint/path as the second argument.	
 # Usage : It accepts 3 arguments, warnings limit and critical limit
 #         If used %age is more than -w value it will give warning message
