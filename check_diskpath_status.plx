@@ -7,6 +7,7 @@ use strict;
 # Author : Priyadarshee D. Kumar
 # Date : 25/12/2012
 # Purpose : To check the used disk space and used inode limit using df on path
+#	    It takes the mountpoint/path as the second argument.	
 # Usage : It accepts 3 arguments, warnings limit and critical limit
 #         If used %age is more than -w value it will give warning message
 #         If used %age is more that -c value it will give critical message
@@ -16,8 +17,8 @@ use strict;
 # Reason for this : In some cases (e.g. virtuzoo container in my case),
 #               the default check_disk plugin comes with nagios doesnt work
 # 	            The df,mount,procfs dont show properly mounted
-# 	            device,filesystems,sizes. So I have to use df <path> to get
-# 	            the details which is fed into this plugin to get values.
+# 	            device,filesystems,sizes. So I have to use df <path>/mountpoint
+#		    to get the details which is fed into this plugin to get values.
 # 			
 # 	            It also works on all unix/linux systems also.
 #########################################################################################
